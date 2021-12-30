@@ -16,12 +16,9 @@ public class Main {
         String musicians[][] = new String[4][2];
 
         for (int i = 0; i < musicians.length; i++) {
-            for (int j = 0; j < musicians[i].length; j++) {
-                musicians[i][j] = imiona[i];
-                System.out.println(musicians[i][j]);
-
-
-            }
+            musicians[i][0] = imiona[i];
+            musicians[i][1] = nazwiska[i];
+            System.out.println(musicians[i][0] + " " + musicians[i][1]);
         }
     }
 }
